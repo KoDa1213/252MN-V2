@@ -2,7 +2,6 @@ import styles from '@styles/components/Item.module.scss'
 import { NextPage } from 'next';
 import image from 'next/image';
 import { useState } from 'react';
-import Modal from 'react-modal';
 
 type IItem = {
     description: string
@@ -42,7 +41,7 @@ const RoadmapItem: NextPage<IProps> = ({ i, r, lineActive, textActive, pointerAc
                         <div className={styles.intext}>{r.title}</div>
                         <div className={styles.description}>{r.description}</div>
                         <div className={styles.item}>{
-                            r.item?.map((image, i) => <img key={`img${i}`} src={image} />)
+                            r.item?.map((image, i) => <img key={`img${i}`} src={image} width={30} height={20}/>)
                         }</div>
                         <div style={{ display: "flex", gap: '20px', paddingLeft: '10px', paddingBottom: '5px' }}>
                             <div className={styles.activity}>{r.activity}</div>
@@ -66,10 +65,9 @@ const RoadmapItem: NextPage<IProps> = ({ i, r, lineActive, textActive, pointerAc
                         <div className={styles.intextTop}>{r.title}</div>
                         <div className={styles.descriptionTop}>{r.description}</div>
                         <div className={styles.itemTop}>{
-                            r.item?.map((image, i) => <img key={`img${i}`} src={image} />)
+                            r.item?.map((image, i) => <img key={`img${i}`} src={image} width={30} height={20}/>)
                         }
-                            <button onClick={toggleModal}>+</button>
-                        </div>
+                          </div>
                         <div style={{ display: "flex", gap: '20px', paddingLeft: '10px', paddingBottom: '5px' }}>
                             <div className={styles.activityTop}>{r.activity}</div>
                             <div className={styles.categoryTop}>{r.category}</div>
@@ -80,17 +78,6 @@ const RoadmapItem: NextPage<IProps> = ({ i, r, lineActive, textActive, pointerAc
             </>}
         </div>
         <div className={`${styles.pointer} ${pointerActive ? styles.active : ''}`}></div>
-        <Modal
-                                isOpen={isOpen}
-                                onRequestClose={toggleModal}
-                                contentLabel="test"
-                                className="mymodal"
-                                overlayClassName="myoverlay"
-                                closeTimeoutsMS={500}
-                            >
-                                <div>zurag durs text</div>
-                                <button onClick={toggleModal}>Close</button>
-                            </Modal>
     </div>
     )
 }

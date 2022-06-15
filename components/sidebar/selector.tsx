@@ -43,7 +43,7 @@ const customStyles = {
 const Sidebar = () => (
  
     <div className={styles.Sidebar}>
-       <StickyBox offsetTop={20} offsetBottom={20} >
+       <StickyBox >
     <div className={styles.Title}>
       Components
     </div>

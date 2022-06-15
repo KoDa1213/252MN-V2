@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 const Navbarindex = () => {
     return (
-        <StickyBox style={{zIndex: 5}}>
+        <StickyBox style={{zIndex: 1}}>
         <ul className={styles.navbar}>
             <Link href='/'>
                 <li>Roadmap</li>
