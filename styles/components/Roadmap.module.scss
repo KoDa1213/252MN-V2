@@ -2,30 +2,28 @@
     position: relative;
     align-items: center;
     padding: 50px;
-    height: auto;
+    height: 100% !important;
+    overflow-y: hidden;
 
 }
 
 .container {
     width: 900px;
-    height: 700px;
-    position: absolute;
-    margin-left: 400px;
-    margin-bottom: 150px;
-    padding-top: 100px;
-    
-   // background: linear-gradient(90deg, rgba(15,10,104,1) 0%, rgba(30,84,180,1) 50%, rgba(11,6,100,1) 100%);
-    
-    
+    height: 100% !important; 
 }
-
 .line {
     align-items: center;
     position: relative;
     width: 100%;
     border-radius: 40;
-    background:#d7adfd;
+    background:#f9737a;
     transition: width 1s;
     border-radius: 10px;
 }
-
+.mainline {
+    position: absolute;
+    height:100%;
+    background-color: #E9E9E9;
+    width: 5px;
+    right: 50%;
+}

@@ -1,8 +1,8 @@
 import { PageLayout } from "layouts"
 
 const Index = () => {
-    return(<PageLayout title="product">
-        Product Page
+    return(<PageLayout title="Forum">
+        Forum
     </PageLayout>)
 }
 

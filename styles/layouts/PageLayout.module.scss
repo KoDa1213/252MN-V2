@@ -1,8 +1,6 @@
 .main {
-    height: auto;
+    min-height: 800px !important;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: #EFF0F4;
+    background-color: #f8f8f8;
 }

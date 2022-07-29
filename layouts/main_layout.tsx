@@ -1,4 +1,4 @@
-import { Footer, NavBar } from "@components";
+import { Footer, NavBar} from "@components";
 import { NextPage } from "next";
 
 
@@ -9,7 +9,7 @@ const Index: NextPage<IProps> = ({ children }) => {
     return (<div>
         <NavBar/>
         {children}
-        {/* <Footer/> */}
+        {<Footer/>}
     </div>)
 }
 export default Index;

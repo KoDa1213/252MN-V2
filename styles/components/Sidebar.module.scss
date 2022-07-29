@@ -1,41 +1,51 @@
-.Sidebar{
+.sidebar{
     width: 250px;
-    height: 550px;
-    background-color: #f9f9f9;
+    display: block;
+    height: -webkit-fill-available;
+    background-color: rgb(251, 251, 251);
     border-radius: 15px;
-    position: relative;
-    margin-top: 100px;
-    margin-right: 900px;
+    margin-top: 70px;
+    position: sticky;
+    top: 150px;
     border-radius: 10px;
-    align-items: flex-start;
+    height: 50% !important;
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.25));
+}
+.title{
+    //background-color: #C5B9FF;
+    //border-top: 1px solid #C5B9FF;
+    //border: 1px solid #C5B9FF;
+    //border-radius: 3px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #de2d37;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.title1{
+    font-weight: 700;
+    font-size: 14px;
+    color: #de2d37;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+.component{
+    padding-left: 20px;
+    line-height: 2;
+}
+.activity{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    display:grid;
+    line-height: 2;
     
-
 }
-.Button{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 12px 20px 12px 50px;
-    gap: 20px;
-    width: 100%;
-    height: 50px;
-    border: none;
-    border-radius: 0px;
-    background-color: #f9f9f9;
-    color:#9e9a9a;
-    font-size: medium;
-    font-weight:550;
-    &:hover{
-        border-left:4px solid #C5B9FF;
-    }
+.switch{
+    margin: 0;
+    padding-bottom: 0;
+    margin-top: -20px;
+    margin-bottom: -15px
 }
-// .Checkbox{
-//     position: absolute;
-//     width: 248px;
-//     height: 260px;
-//     font-size: medium;
-//     font-size: 550;
-//     color: #9e9a9a;
-//     border-radius: 0px 0px 0px 13px;
-// }
